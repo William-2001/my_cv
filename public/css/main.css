@@ -1,0 +1,248 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    color: #b5b5b5;
+    background-color: #1c1c1c;
+    font-family: 'Assistant', sans-serif;
+}
+
+a{
+    color: #b5b5b5;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #cfcfcf;
+}
+
+nav .navbar-nav a{
+    color: #b5b5b5!important;
+}
+
+nav .navbar-nav a:hover{
+    color: #cfcfcf!important;
+}
+
+.header{
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+    font-size: 3.7em;
+}
+
+.thick-hr {
+    height: 0px;
+    border: none;
+    border-top: 10px solid #750000;
+    border-radius: 25px;
+}
+
+.outer-container{
+    width: 75%;
+}
+
+/* Emphasize */
+.emph{
+    color: #750000;
+    font-weight: bold;
+}
+
+/* non-essential */
+
+.jumbo-outer-wrapper{
+    background-color: #010101;
+    background-size: contain;
+}
+
+.jumbo-content{
+    padding: 10%;
+}
+
+.jumbo-pic{
+    height: 100%;
+    width: 100%;
+}
+
+/* about */
+
+.about{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* Skills section */
+.skill-box{
+    margin: 0.2em;
+    height: auto;
+    background-color: #141414;
+    border: #2C2C2C 3px solid;
+    border-radius: 10px;
+}
+
+.skill-box:hover{
+    background-color: #2C2C2C;
+    -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.skill-box-content{
+    padding: 0.7em;
+}
+
+/* Education and work experience */
+
+.card{
+    margin: 0.3em;
+    height: auto;
+    background-color: #141414;
+    border: #2C2C2C 3px solid;
+    border-radius: 10px;
+}
+
+.card:hover{
+    background-color: #2C2C2C;
+    -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.card-header{
+    border-color: #750000;
+}
+
+.list-group-item{
+    background-color: #141414;
+    color: #b5b5b5;
+    border-color: #750000;
+}
+
+.card:hover .list-group-item{
+    background-color: #2C2C2C;
+}
+
+/* Animations */
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-inset-center {
+    0% {
+        -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+    }
+    @keyframes shadow-inset-center {
+    0% {
+        -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+    }
+    @keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+
+    .jumbo-pic{
+        display: none;
+    }
+
+    .outer-container{
+        width: 90%;
+    }
+}
